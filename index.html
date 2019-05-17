@@ -1,51 +1,96 @@
+<!--### Assignment One Instructions (Bootstrap)
+
+1. Inside your `Bootstrap-Portfolio` repo, create `index.html`, `portfolio.html` and `contact.html`.
+
+2. Using Bootstrap, recreate your portfolio site with the following items:
+
+   * A navbar
+
+   * A responsive layout (remember the grid, rows and columns are your friends)
+
+     * eg. On an `xs` screen, content should take up the entire screen. On `sm` and larger screens, you should have some margins on the left and right side of the screen. Check out various sites on your mobile device versus your computer to see this in action!
+
+   * Responsive images
+
+   **BONUS**
+   Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site _(Hint: Check out the Bootstrap documentation)_
+
+3. Your Bootstrap solution should minimize use of media queries.
+
+4. Deploy your new Bootstrap-powered portfolio to GitHub Pages.-->
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-    <title>myLiveWebsite</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+  <title>Index</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  
 </head>
 
 <body>
-      <div class="navbar">
-           <ul>
-               <li>  Home </li>
-               <li>  About </li>
-               <li>  Guide </li>
-               <li>  Contact</li>
-           </ul>
-      </div>
 
-      <div class="bar">
-
-      </div>
-
-      <div class="content">
-           <div class="box1">
-                <h2>News</h2>
-                <p>Today's news</p>
-           </div>
-           <div class="box2">
-                <h2>Weather</h2>
-                <p>Today's Weather</p>
-           </div>
-           <div class="box3">
-                <h2>Sports</h2>
-                <p>Activities</p>
-           </div>
-      
-
-            <div class="aside">
-                    <div class="asideimg1">
-                        <img src="1.JPG" alt="art1" height="150" width="150">              
-                    </div>
-                    <div class="asideimg2">
-                            <img src="2.JPG" alt="art2" height="150" width="150">              
-                    </div>
+    <header class="container">
+            <div class="row">
+                <div class="col-12 col-sm-10 col-md-2 col-lg-2 ">
+                    <button type="button" class="btn btn-primary btn-md myname">Helen</button>
+                </div>
+                <div class="col-12 col-sm-10 col-md-9 col-lg-8 linkitems">
+                        <ul class="nav justify-content-end ">
+                            <li class="nav-item">
+                            <a class="nav-link active" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            
+                        </ul>
+                </div>
             </div>
-       </div>
+    </header>
 
+    <div class="container-fluid bg-light wholebody" >
+            <div class="container bg-white mt-md-3 mt-lg-2 maincontent">
+              <div class="container">  
+           
+                <div class="row col-8 col-sm-5 col-md-3 col-lg-3 subtitle">About Me</div>
+                <hr>
+                  
+                <div class="row">
+                        <div class="col-11 col-sm-9 col-md-3 col-lg-3" offset-md-1 >
+                          <div class="content">
+                            <img src="assets/images/my.png" class="img-fluid" alt="my photo"  >
+                                                      
+                          </div>
+    
+                        </div>
+                
+                        <div class="col-11 col-sm-9 col-md-9 col-lg-8">
+                            <div class="content">
+                                    <p>   Hello, I am Helen, a very good student at Vanderbilt Bootcamp ^-^.
+                                            <br>
+                                            I love travelling, I had been to many places, such as Thailand, Australia, France and Canada  etc.
+                                             I would definitely recommend anyone to visit Banff national park some day. It's so breathtaking.
+                                            <br>
+                                             I like palying badminton, hiking and other outdoor activities. 
+                                            <br>
+                                             Coding is a time-cosuming work, but it's fun. I love it!!!!!!!
+                                     </p>        
+                                
+                            </div>
+        
+                        </div>
+                   </div>            <!--end of  row-->
+           
+      <footer class="footer">
+        <div class="copyright">
+            <p> &#169 Copyright</p>
+        </div>
+      </footer>
 
-
-</body>
+ </body>
 </html>
