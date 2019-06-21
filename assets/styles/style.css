@@ -93,7 +93,21 @@ a:active{
       
 .messageBox{
     height:120px;
-}      
+}   
+
+h1{
+    color:#4aaaa5;
+    size:32px;
+    font-weight: bold;
+    text-align: center;
+    margin:10px;
+}
+
+h4{
+    text-align: center;
+    margin:10px;
+}
+
 
 .row, 
 .row> .column
