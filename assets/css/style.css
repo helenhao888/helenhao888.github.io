@@ -1,0 +1,237 @@
+
+.linkitems{
+    margin:auto;
+}
+a:link{
+    color:blue;
+    }
+a:visited{
+    color:palevioletred;
+    }
+a:hover{
+    background-color:lightblue;
+    
+}
+
+a:active{
+    color:red;
+}
+
+
+.hthree{
+    background-color:#4aaaa5;
+    color:white;
+    margin-top:-55px;
+    text-align:center;
+    width:100%;
+}
+
+
+.subtitle{
+    font-family: "Georgia', Times, Times New Roman, serif";
+    color:white;
+    background-color:#4aaaa5;
+    height: 50px;
+    font-weight:bold;
+    font-size: 32px;
+    padding:35px;
+    width:100%;
+    display:block;
+}
+
+.sectionbody{
+    
+    background-image: url("../images/interlaced.png");
+    background-color:#ffffff;
+    top: 15px;
+    /* width: 100%;  */
+    overflow: auto;
+    /* min-height:100%; */
+    /* margin-bottom:-40px; */
+    margin:50px;
+    font-family:"Arial', 'Helvetica Neue', Helvetica, sans-serif";
+    max-width:90%;
+     }
+
+.introduction{
+    font-size:28px;
+    color:midnightblue;
+    font-weight: bold;
+}
+
+.aboutme{
+    font-size:24px;
+    
+}
+
+table li{
+    padding:5px;
+    font-size:20px;
+}
+
+table th{
+    font-size:24px;
+    font-weight: bold;
+}
+
+.seperator{   
+    width:600px;
+    border-bottom:solid blue 1ex;
+}
+
+.sectionbody:after {
+content:"";
+display:block;
+}
+
+.footer, .section:after{
+height:40px;
+}
+ 
+
+.submitBt{
+    
+    background-color:#4aaaa5;
+    font-weight:bold;
+    color:white;
+    padding:10px;  
+    height:auto;
+    border:0;
+}
+.submitBt:hover{
+    background-color:blueviolet;
+    
+}
+
+
+.submitBt:active{
+    color:red;
+}
+
+      
+.messageBox{
+    height:120px;
+}   
+
+.hide-on-med-and-down li{
+
+    display:inline-block;
+    font-size:24px;
+    padding:6px;
+    /* margin:3px; */
+}
+
+.title{
+    float: left;
+}
+
+.sidenav{
+    height:500px;
+    background-color:white;
+    
+}
+
+h1{
+    color:#4aaaa5;
+    font-size:42px;
+    font-weight: bold;
+    margin:10px;
+}
+
+h4{
+    text-align: center;
+    margin:10px;
+    color:purple;
+    font-size:32px;
+}
+
+.sidenav.fa{  
+    margin:20px;
+    padding-left:30px;
+    font-size:28px;
+}
+
+.fa-user{
+    color:blue;
+}
+
+.fa-bar-chart{
+    color:blueviolet;
+}
+
+.fa-briefcase{
+    color:yellowgreen;
+}
+
+.fa-file-text{
+    color:gray;
+}
+
+.fa-address-card{
+    color:blueviolet;
+}
+
+.contactBox{
+ 
+    background-color:lightgoldenrodyellow;
+    text-align:center;
+    font-size:32px;
+    width:20%;
+    padding:10px;
+    float: center;
+}
+
+.contact-title{
+    text-align:center;
+    margin:30px;
+}
+
+.contact-lists {
+    display:block;
+    text-align:center;
+    height:60px;
+    font-size:36px;
+    color:blue;
+}
+
+/* .contact-lists i{
+    margin:20px;
+} */
+
+/* a.hoverline {
+	border-bottom: 3px solid transparent !important;
+	padding: 3px 3px 0 3px;
+	transition: .25s all;
+	-moz-transition: .25s all;
+	-webkit-transition: .25s all;
+}
+a.hoverline:hover {
+	border-bottom: 3px solid #009688 !important;
+} */
+   
+.row, 
+.row> .column
+{
+       padding:4px 8px;
+}
+
+.footer{
+
+    clear: both;
+    background:#4aaaa5;
+
+    width: 100%;
+
+}
+
+.copyright{
+        background:grey;
+        color:white;
+        height:30px;
+        position:relative;
+        top:10px;
+        text-align:center;
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+}

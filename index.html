@@ -11,103 +11,288 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <!-- Font Awesome CSS Icons (For cool glyphicons) -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" type ="text/css" href="assets/styles/reset.css">
+  <script src="https://kit.fontawesome.com/f5a8a067c7.js"></script>
+  <!--Import materialize.css-->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" type ="text/css" href="assets/css/reset.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" type ="text/css" href="assets/styles/style.css"/>
+  <link rel="stylesheet" type ="text/css" href="assets/css/style.css"/>
 </head>
 
-<body>
- 
-  <!-- <nav class="navbar sticky-top navbar-light bg-light"> -->
-  
+<body>      
 
-  <div class="pos-f-t">
-    
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>       
-      </button>
-    </nav>
-    <div class="collapse" id="navbar">
-      <div class="bg-dark side-nav">        
-        <ul class="list-group ">
-          <li class=title>
+    <!-- <i class="fas fa-code">Code</i> -->
+        <nav class="nav-wraper sticky-top bg-dark" >      
+            <div class="container ">                
+                <a href="#" class="sidenav-trigger" data-target="slide-out" >
+                  <i class="material-icons">menu</i>
+                </a> 
+                <div class=title left>
+                    <h1 class="teal-text">Helen Hao</h1>
+                    <h4 class="teal-text">Full Stack Developer</h4>
+                </div>
+                <ul class=" hide-on-med-and-down   table-of-contents">                  
+                    <li><i class="fa fa-user" aria-hidden="true"><a href="#about">About</a></i></li>
+                    <li><i class="fa fa-bar-chart" aria-hidden="true"><a href="#skills">Skills</a></i></li>
+                    <li><i class="fa fa-briefcase" aria-hidden="true"><a href="#portfolio">Portfolio</a></i></li>
+                    <li><i class="fa fa-file-text" aria-hidden="true"><a href="https://docs.google.com/document/d/1DJnspaG7GqwZVADFLNdtljNXkPXzCS7zqlB-Al_I3yQ/edit" target="_blank">Resume</a></i></li>    
+                    <li><i class="fa fa-envelope" aria-hidden="true"><a href="#contact">Contact</a></i></li>
+                    
+                </ul>
+              </div>  
+          </nav>  
+
+        <ul class="sidenav" id="slide-out" >           
+            <li>
               <h1 class="teal-text">Helen Hao</h1>
-              <h4 class="text-white">Full Stack Developer</h4>
-          </li>
-          <li class="list-group-item fa fa-user" >  About</li>
-          <li class="list-group-item fa fa-bar-chart" aria-hidden="true">  Skills</li>
-          <li class="list-group-item fa fa-briefcase" aria-hidden="true">  Portfolio</li>
-          <li class="list-group-item fa fa-file-text" aria-hidden="true">  Resume</li>    
-          <li class="list-group-item fa fa-address-card" aria-hidden="true"> Contact</li>
+              <h4 class="text-blue">Full Stack Developer</h4>
+            </li>
+            <li><div class="divider"></div></li>
+            <li><i class="fa fa-user" aria-hidden="true"><a href="#about">    About</a></i></li>
+            <li><i class="fa fa-bar-chart" aria-hidden="true"><a href="#skills">   Skills</a></i></li>
+            <li><i class="fa fa-briefcase" aria-hidden="true"><a href="#portfolio">   Portfolio</a></i></li>
+            <li><i class="fa fa-file-text" aria-hidden="true"><a href="https://docs.google.com/document/d/1DJnspaG7GqwZVADFLNdtljNXkPXzCS7zqlB-Al_I3yQ/edit" target="_blank">   Resume</a></i></li>    
+            <li><i class="fa fa-envelope" aria-hidden="true"><a href="#contact">   Contact</a></i></li>              
         </ul>
-      </div>
-    </div>
-  </div>
-
-  
-    <!-- <header class="container">
-            <div class="row">
-                <div class="col-12 col-sm-10 col-md-2 col-lg-2 ">
-                    <button type="button" class="btn btn-primary btn-md myname">Helen</button>
-                </div>
-                <div class="col-12 col-sm-10 col-md-9 col-lg-8 linkitems">
-                        <ul class="nav justify-content-end ">
-                            <li class="nav-item">
-                            <a class="nav-link active" href="index.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                            
-                        </ul>
-                </div>
-            </div>
-    </header> -->
-
-
-    
-    <div class="container-fluid bg-light wholebody" >
-            <div class="container bg-white mt-md-3 mt-lg-2 maincontent">
-              <div class="container">  
-           
-                <div class="row col-8 col-sm-5 col-md-3 col-lg-3 subtitle">About Me</div>
-                <hr>
-                  
-                <div class="row">
-                        <div class="col-11 col-sm-9 col-md-3 col-lg-3" offset-md-1 >
-                          <div class="content">
-                            <img src="assets/images/my.png" class="img-fluid" alt="my photo"  >
-                                                      
-                          </div>
-    
-                        </div>
-                
-                        <div class="col-11 col-sm-9 col-md-9 col-lg-8">
-                            <div class="content">
-                                    <p>   Hello, I am Helen, a full stack developer and mainframe developer.
-                                            <br>
-                                            I love travelling, I had been to many places, such as Thailand, Australia, France and Canada  etc.
-                                             I would definitely recommend anyone to visit Banff national park some day. It's so breathtaking.
-                                            <br>
-                                             I like palying badminton, hiking and other outdoor activities. 
-                                            <br>
-                                             Coding is a time-cosuming work, but it's fun. I love it!!!!!!!
-                                     </p>        
-                                
-                            </div>
         
-                        </div>
-                   </div>            <!--end of  row-->
-           
-      <footer class="footer">
-        <div class="copyright">
-            <p> &#169 Copyright</p>
-        </div>
-      </footer>
+        <section id="about" class="section"> 
+            <div class="container-fluid bg-light sectionbody" >
+                <div class="row container-fluid  subtitle">ABOUT</div>
+                <hr>                      
+                <div class="row">
+                    <div class="col-11 col-sm-9 col-md-3 col-lg-3" offset-md-1 >
+                      <div class="content">
+                        <img src="assets/images/my.png" class="img-fluid" alt="my photo"  >                                                          
+                      </div>        
+                    </div>
+                
+                    <div class="col-11 col-sm-9 col-md-9 col-lg-8">
+                        <div class="introduction">
+                             I'm a full stack and web developer.
+                        </div>     
+                        <br>
+                        <p class=aboutme>Highly self-driven professional with  experience in financial domain with a technical design/programming background. </p>
+                        <br>
+                        <p class=aboutme>Large project implementation, migration and support experience. Expertise in Mainframe skill sets with experience in SDLC, waterfall and Agile methodologies. 
+                        </p>
+                        <br>   
+                    </div>
+                </div>            <!--end of  row-->
+            </div> 
+        </section>     
 
- </body>
-</html>
+        <section id="skills" class="section"> 
+            <div class="container-fluid bg-light sectionbody" > 
+                <div class="row  subtitle">SKILLS</div>
+                <hr>
+                <table class="table table-bordered table-hover ">
+                    <thead class="thead-dark">                
+                        <tr>
+                            <th scope="col">Full Stack Developer</th>
+                            <th scope="col">Mainframe Developer</th>
+                            <th scope="col">Project Skills</th>                           
+                        </tr>              
+                    </thead>
+                    <tbody class="skill-list">        
+                         <tr>
+                            <td>
+                              <li><i class="fab fa-html5"> Html 5</i></li>
+                              <li><i class="fab fa-css3" aria-hidden="true"> CSS 3</i> </li>
+                              <li><i class="fab fa-js"> Javascript</i></li>
+                              <li><i class="fab fa-js"></i> jQuery</li>
+                              <li><i class="fab fa-bootstrap"> Bootstrap</i></li>
+                              <li><i class="fab fa-node"> Node.js</i></li>
+                              <li><i class="fas fa-database"> Firebase</i></li>
+                              <!-- <li><image src="assets/images/firebase.jpg">Firebase</image></li> -->
+                              <li><i class="fab fa-github" aria-hidden="true"> Github</i></li>
+                              <li><i class="fab fa-slack" aria-hidden="true"> Slack</i></li>
+                            </td>
+                            
+                            <td>
+                              <li>Cobol</li>
+                              <li>Db2</li>
+                              <li>CICS</li>
+                              <li>JCL</li>
+                              <li>Mainframe</li>
+                            </td>
+
+                            <td>
+                              <li>SDLC</li>
+                              <li>Waterfall</li>
+                              <li>Agile</li>
+                              <li>PMP</li>
+                            </td>
+                         </tr>      
+                        
+                    </tbody>
+                 </table>
+               
+            </div>
+        </section>      
+       
+        <section id="portfolio" class="section">
+           
+         <div class="container-fluid bg-light sectionbody" >                 
+                 <div class="row subtitle">PORTFOLIO</div>
+                 <hr>
+                 <div class="row">
+                      <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
+                          <div class="row">                <!--subrow-->
+                              <div class="content">
+                                <a href= "https://helenhao888.github.io/Word-Guess-Game/" alt="Word Guess "><img src="assets/images/wordguessgame.png" class="img-fluid" alt="Word Guess Game"></a>
+                               </div>
+                          </div>
+                          <div class="row">       
+                              <div class="hthree"> 
+                                  <a href= "https://github.com/helenhao888/Word-Guess-Game.git" alt="Word Guess Game Code">
+                                      <h3>Source Code</h3></a>
+                              </div>
+                                    
+                          </div> 
+                      </div>
+                      <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
+                              <div class="row">
+                                  <div class="content">
+                                      <a href= "https://helenhao888.github.io/unit-4-game/" alt="Star War"> 
+                                               <img src="assets/images/starwargame.png" class="img-fluid" alt="Star War Game"  ></a>
+                                                          
+                                  </div>
+                              </div>
+                              <div class="row">
+                                      
+                                  <div class="hthree"> 
+                                      <a href= "https://github.com/helenhao888/unit-4-game.git" alt="Star War Game Code">
+                                      <h3>Source Code </h3></a>
+                                  </div>
+                                        
+                              </div>
+                          </div>
+                      </div>    <!--end of row-->
+                      <div class="row">
+                          <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
+                              <div class="row">                <!--subrow-->
+                                  <div class="content">
+                                          <a href= "https://helenhao888.github.io/TriviaGame/" alt="Trivia Game"> 
+                                              <img src="assets/images/triviagame.jpg" class="img-fluid" alt="Trivia Game"  ></a>  
+                                                
+                                  </div>
+                              </div>
+                              <div class="row">             <!--subrow-->
+                                      
+                                  <div class="hthree"> 
+                                      <a href="https://github.com/helenhao888/TriviaGame.git">
+                                      <h3>Source Code</h3></a>
+                                  </div>
+                                        
+                              </div>
+                          </div>
+                          <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
+                                  <div class="row">
+                                      <div class="content">
+                                         <a href= "https://helenhao888.github.io/GifTastic/" alt="Gif Tastic">    
+                                             <img src="assets/images/giftastic.png" class="img-fluid" alt="Gif Tastic"  ></a>                                                           
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                          
+                                      <div class="hthree"> 
+                                              <a href= "https://github.com/helenhao888/GifTastic.git">
+                                          <h3>Source Code</h3></a>
+                                      </div>
+                                            
+                                  </div>
+                              </div>
+                  </div>    <!--end of row-->       
+ 
+                  <div class="row">                      
+                            
+                      <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
+                              <div class="row">
+                                  <div class="content">
+                                     <a href= "https://helenhao888.github.io/TrainScheduler/" alt="Train Scheduler">    
+                                         <img src="assets/images/trainscheduler.png" class="img-fluid" alt="Train Scheduler"  ></a> 
+                                  </div>
+                              </div>
+                              <div class="row">
+                                      
+                                  <div class="hthree"> 
+                                          <a href= "https://github.com/helenhao888/TrainScheduler.git">
+                                      <h3>Source Code</h3></a>
+                                  </div>
+                                        
+                              </div>
+                      </div>
+                      <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
+                          <div class="row">
+                              <div class="content">
+                                 <a href= "https://petewanca.github.io/team-helen-project-1/" alt="Love Your Car">    
+                                     <img src="assets/images/loveyourcar.jpg" class="img-fluid" alt="Love Your Car"  ></a>                                                           
+                              </div>
+                          </div>
+                          <div class="row">
+                                  
+                              <div class="hthree"> 
+                                      <a href= "https://github.com/petewanca/team-helen-project-1.git">
+                                  <h3>Source Code</h3></a>
+                              </div>
+                                    
+                          </div>
+                      </div>
+              </div>    <!--end of row-->  
+              <!-- </div> -->
+
+            </div> 
+        </section>
+
+        <section id="contact" class="section"> 
+            <div class="container-fluid bg-light sectionbody" >
+                <div class="row  subtitle">Contact</div>
+                <hr>
+                <div class="contact-title">
+                    <h1>Full Stack / Web Developer</h1>
+                    <br>
+                    <h4>I'm available for work, get in touch.</h4>
+                </div>    
+                <hr class="seperator">
+                <div class="row contactBox"><i class="fa fa-envelope" aria-hidden="true">  Contact</i>
+                </div>
+                <div class="row contact-lists">
+                    <a href="https://www.linkedin.com/in/jinzhao-helen-hao-611b3752/" target="_blank" data-position="top" data-toggle="tooltip" title="View Helen on Linkedin" class="tooltipped"><i class="fab fa-linkedin"></i></a>                  
+                    <a href="https://github.com/helenhao888" target="_blank" data-position="top" data-toggle="tooltip" title="View Helen on Github" class="tooltipped"><i class="fab fa-github-square"></i></a>
+                    <a aria-label="Email Helen" href="mailto:haojinzhao888@gmail.com" data-position="top" data-toggle="tooltip" title="Email Helen Hao" class="tooltipped"><i class="fas fa-envelope-square"></i></a>
+                </div>
+
+                
+                    <form class="contact-form">
+                        <div class="form-group col-11 col-sm-10 col-md-8 col-lg-7 offset-md-1 justify-content-start">
+                            <label for="inputName">Name</label>
+                            <input type="password" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+                        <div class="form-group col-11 col-sm-10 col-md-8 col-lg-7 offset-md-1 justify-content-start">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail"  placeholder="Enter email">                                
+                        </div>
+                        <div class="form-group col-11 col-sm-10 col-md-8 col-lg-7 offset-md-1 justify-content-start">
+                            <label for="inputMsg">Message</label>
+                            <input type="message" class="form-control messageBox" id="inputMsg" placeholder="">
+                        </div>                   
+                        <button type="submit" class="btn btn-primary offset-md-1 justify-content-start submitBt">Submit</button>                 
+                  </form>   
+            </div>
+        </section>
+
+        <footer class="footer">
+        <div class="copyright">
+            <p> &#169  2019 Copyright</p>
+        </div>
+        </footer>
+
+    </body>    
+    
+    <script src="assets/javascript/index.js" async defer></script>
+</html>    
