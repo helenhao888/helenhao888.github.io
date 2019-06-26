@@ -1,7 +1,4 @@
 
-/* .linkitems{
-    margin:auto;
-} */
 a:link{
     color:blue;
     }
@@ -114,7 +111,7 @@ h1{
     color:#4aaaa5;
     font-size:42px;
     font-weight: bold;
-    margin:10px;
+    margin:10px,10px,5px,0px;
 }
 
 h4{
@@ -125,12 +122,13 @@ h4{
     font-weight: bold;
 }
 
+.hide-on-med-and-down li{
+    font-size:32px;
+    margin:3px;
+}
 .sidenav{
     background-image: url("../images/sidebarbk.jpg");
-    /* background-color:rgb(53, 236, 190);
-    background-blend-mode:screen; */
     font-size:30px;
-    /* margin:20px; */
     padding:20px;
     height:60%; 
 }  
@@ -171,9 +169,16 @@ span{
     margin:10px;
 }
 
+.card{
+    width:90%;
+}
+.card-content{
+    background:url("../images/portfoliobk.jpg") ;
+}
+
 .card-links{
-   font-size:40px;
-   margin:10px;
+    font-size:40px;
+    margin:10px;
 }
 
 .card-reveal span,.card-content span{
@@ -214,20 +219,7 @@ span{
     color:blue;
 }
 
-/* .contact-lists i{
-    margin:20px;
-} */
 
-/* a.hoverline {
-	border-bottom: 3px solid transparent !important;
-	padding: 3px 3px 0 3px;
-	transition: .25s all;
-	-moz-transition: .25s all;
-	-webkit-transition: .25s all;
-}
-a.hoverline:hover {
-	border-bottom: 3px solid #009688 !important;
-} */
    
 .row, 
 .row> .column
