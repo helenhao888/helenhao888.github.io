@@ -1,31 +1,20 @@
 
-.linkitems{
+/* .linkitems{
     margin:auto;
-}
+} */
 a:link{
     color:blue;
     }
 a:visited{
-    color:palevioletred;
+    color:lightpink;
     }
 a:hover{
-    background-color:lightblue;
-    
+    background-color:lightblue;    
 }
 
 a:active{
-    color:red;
+    color:brown;
 }
-
-
-.hthree{
-    background-color:#4aaaa5;
-    color:white;
-    margin-top:-55px;
-    text-align:center;
-    width:100%;
-}
-
 
 .subtitle{
     font-family: "Georgia', Times, Times New Roman, serif";
@@ -44,10 +33,7 @@ a:active{
     background-image: url("../images/interlaced.png");
     background-color:#ffffff;
     top: 15px;
-    /* width: 100%;  */
     overflow: auto;
-    /* min-height:100%; */
-    /* margin-bottom:-40px; */
     margin:50px;
     font-family:"Arial', 'Helvetica Neue', Helvetica, sans-serif";
     max-width:90%;
@@ -61,7 +47,6 @@ a:active{
 
 .aboutme{
     font-size:24px;
-    
 }
 
 table li{
@@ -80,15 +65,14 @@ table th{
 }
 
 .sectionbody:after {
-content:"";
-display:block;
+    content:"";
+    display:block;
 }
 
 .footer, .section:after{
-height:40px;
+    height:40px;
 }
  
-
 .submitBt{
     
     background-color:#4aaaa5;
@@ -117,19 +101,14 @@ height:40px;
 
     display:inline-block;
     font-size:24px;
-    padding:6px;
-    /* margin:3px; */
+    padding:5px;
 }
 
 .title{
     float: left;
 }
 
-.sidenav{
-    height:500px;
-    background-color:white;
-    
-}
+
 
 h1{
     color:#4aaaa5;
@@ -139,16 +118,30 @@ h1{
 }
 
 h4{
-    text-align: center;
-    margin:10px;
+    margin-top:10px;
+    margin-bottom:10px;
     color:purple;
+    font-size:36px;
+    font-weight: bold;
+}
+
+.sidenav{
+    background-image: url("../images/sidebarbk.jpg");
+    /* background-color:rgb(53, 236, 190);
+    background-blend-mode:screen; */
+    font-size:30px;
+    /* margin:20px; */
+    padding:20px;
+    height:60%; 
+}  
+
+.chip{
     font-size:32px;
 }
 
-.sidenav.fa{  
-    margin:20px;
-    padding-left:30px;
-    font-size:28px;
+.chip ,.sidenav li{  
+    padding:5px;
+    margin-left:50px;
 }
 
 .fa-user{
@@ -164,13 +157,40 @@ h4{
 }
 
 .fa-file-text{
-    color:gray;
+    color:white;
 }
 
-.fa-address-card{
+.fa-envelope{
     color:blueviolet;
 }
 
+
+span{
+    font-size:28px;
+    color:indigo;
+    margin:10px;
+}
+
+.card-links{
+   font-size:40px;
+   margin:10px;
+}
+
+.card-reveal span,.card-content span{
+    margin:10px;
+    font-size:32px;
+    font-family: cursive;
+}
+.card-reveal{
+    background:url("../images/card.jpeg");
+    font-size:24px;
+    padding:10px;
+}
+
+.card-reveal li{
+    margin:6px;
+}
+/* contact section */
 .contactBox{
  
     background-color:lightgoldenrodyellow;

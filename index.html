@@ -19,6 +19,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
   rel="stylesheet">
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
   <link rel="stylesheet" type ="text/css" href="assets/css/reset.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" type ="text/css" href="assets/css/style.css"/>
@@ -26,17 +28,16 @@
 
 <body>      
 
-    <!-- <i class="fas fa-code">Code</i> -->
         <nav class="nav-wraper sticky-top bg-dark" >      
             <div class="container ">                
                 <a href="#" class="sidenav-trigger" data-target="slide-out" >
                   <i class="material-icons">menu</i>
                 </a> 
-                <div class=title left>
-                    <h1 class="teal-text">Helen Hao</h1>
-                    <h4 class="teal-text">Full Stack Developer</h4>
-                </div>
-                <ul class=" hide-on-med-and-down   table-of-contents">                  
+                
+                <ul class=" hide-on-med-and-down   table-of-contents">   
+                    <div class=title left>
+                        <h1 class="teal-text">Helen Hao</h1>                        
+                    </div>               
                     <li><i class="fa fa-user" aria-hidden="true"><a href="#about">About</a></i></li>
                     <li><i class="fa fa-bar-chart" aria-hidden="true"><a href="#skills">Skills</a></i></li>
                     <li><i class="fa fa-briefcase" aria-hidden="true"><a href="#portfolio">Portfolio</a></i></li>
@@ -47,13 +48,18 @@
               </div>  
           </nav>  
 
-        <ul class="sidenav" id="slide-out" >           
-            <li>
-              <h1 class="teal-text">Helen Hao</h1>
+        <ul class="sidenav" id="slide-out" >    
+            <br>       
+            <li>              
               <h4 class="text-blue">Full Stack Developer</h4>
             </li>
-            <li><div class="divider"></div></li>
-            <li><i class="fa fa-user" aria-hidden="true"><a href="#about">    About</a></i></li>
+            <div class="chip">
+                <img src="assets/images/myPic.jpg" alt="My picture">
+                Helen Hao
+            </div>
+
+            <div class="divider"></div>
+            <li><i class="fa fa-user sidenav-list" aria-hidden="true"><a href="#about">    About</a></i></li>
             <li><i class="fa fa-bar-chart" aria-hidden="true"><a href="#skills">   Skills</a></i></li>
             <li><i class="fa fa-briefcase" aria-hidden="true"><a href="#portfolio">   Portfolio</a></i></li>
             <li><i class="fa fa-file-text" aria-hidden="true"><a href="https://docs.google.com/document/d/1DJnspaG7GqwZVADFLNdtljNXkPXzCS7zqlB-Al_I3yQ/edit" target="_blank">   Resume</a></i></li>    
@@ -77,6 +83,8 @@
                         </div>     
                         <br>
                         <p class=aboutme>Highly self-driven professional with  experience in financial domain with a technical design/programming background. </p>
+                        <br>
+                        <p class="aboutme">Hands-on experience in Web design/development and front-end programming using javascript, jQuery, HTML, CSS,  Bootstrap, firebase, AJAX and Node.js. </p>
                         <br>
                         <p class=aboutme>Large project implementation, migration and support experience. Expertise in Mainframe skill sets with experience in SDLC, waterfall and Agile methodologies. 
                         </p>
@@ -135,117 +143,193 @@
             </div>
         </section>      
        
-        <section id="portfolio" class="section">
-           
-         <div class="container-fluid bg-light sectionbody" >                 
-                 <div class="row subtitle">PORTFOLIO</div>
-                 <hr>
-                 <div class="row">
-                      <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
-                          <div class="row">                <!--subrow-->
-                              <div class="content">
-                                <a href= "https://helenhao888.github.io/Word-Guess-Game/" alt="Word Guess "><img src="assets/images/wordguessgame.png" class="img-fluid" alt="Word Guess Game"></a>
-                               </div>
-                          </div>
-                          <div class="row">       
-                              <div class="hthree"> 
-                                  <a href= "https://github.com/helenhao888/Word-Guess-Game.git" alt="Word Guess Game Code">
-                                      <h3>Source Code</h3></a>
-                              </div>
+        <section id="portfolio" class="section">           
+            <div class="container-fluid bg-light sectionbody" >                 
+                <div class="row subtitle">PORTFOLIO</div>
+                <hr>
+                <div class="row">
+                        
+                    <div class=" col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/images/loveyourcar.jpg" alt="Love Your Car">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Love Your Car App<i class="material-icons right">more_vert</i></span>
+                                <p>Car Sales and Inquiry App with user authentication.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"> Accomplishments:<i class="material-icons right">close</i></span>
+                               
+                                <div class="divider"></div>
+                                <ul>
+                                    <li> JavaScript / jQuery</li>
+                                    <li> HTML 5</li>
+                                    <li> CSS 3</li>
+                                    <li> Bootstrap</li>
+                                    <li> Materialize CSS</li>
+                                    <li> FireBase</li>
+                                    <li> User Authentication</li>
+                                </ul>
+                                <br>
+                                <div class="divider"></div>
+                                <div class="card-links">
+                                    <a href="https://petewanca.github.io/team-helen-project-1/" alt="Love Your Car" target="_blank" data-position="top" data-toggle="tooltip" title="Live App" class="tooltipped"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/petewanca/team-helen-project-1.git" target="_blank" data-position="top" data-toggle="tooltip" title="View Code on Github" class="tooltipped"><i class="fab fa-github-square"></i></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/images/starwargame.png" alt="Star War Game">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Star War Game<i class="material-icons right">more_vert</i></span>
+                                <p>Web-based game app using jQuery to manipulate HTML dynamically.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"> Accomplishments:<i class="material-icons right">close</i></span>
+                                
+                                <div class="divider"></div>
+                                <ul>
+                                    <li> JavaScript / jQuery</li>
+                                    <li> HTML 5</li>
+                                    <li> CSS 3</li>
+                                    <li> Bootstrap</li>
+                                </ul>
+                                <br>
+                                <div class="divider"></div>
+                                <div class="card-links">
+                                    <a href="https://helenhao888.github.io/unit-4-game/" alt="Star War Game" target="_blank" data-position="top" data-toggle="tooltip" title="Live App" class="tooltipped"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/helenhao888/unit-4-game.git" target="_blank" data-position="top" data-toggle="tooltip" title="View Code on Github" class="tooltipped"><i class="fab fa-github-square"></i></a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>                          
+                    
+                <div class="row">   
+                    <div class=" col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/images/trainscheduler.png" alt="Train Scheduler App">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Train Schedule App<i class="material-icons right">more_vert</i></span>
+                                <p>Train schedule application that incorporates Firebase to add,update and delete train data.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"> Accomplishments:<i class="material-icons right">close</i></span>
+                                
+                                <div class="divider"></div>
+                                <ul>
+                                    <li> JavaScript / jQuery</li>
+                                    <li> HTML 5</li>
+                                    <li> CSS 3</li>
+                                    <li> Bootstrap</li>
+                                    <li> Firebase</li>
+                                    <li> Moment.js</li>
+                                </ul>
+                                <br>
+                                <div class="divider"></div>
+                                <div class="card-links">
+                                    <a href="https://helenhao888.github.io/TrainScheduler/" alt="Train Scheduler" target="_blank" data-position="top" data-toggle="tooltip" title="Live App" class="tooltipped"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/helenhao888/TrainScheduler.git" target="_blank" data-position="top" data-toggle="tooltip" title="View Code on Github" class="tooltipped"><i class="fab fa-github-square"></i></a>
+                                </div> 
+                            </div>
+                        </div>  
+                    </div>   
+                    
+                
+                    <div class=" col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/images/triviagame.jpg" alt="Trivia Game">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Trivia Game<i class="material-icons right">more_vert</i></span>
+                                <p>Web-based game app using JavaScript for the logic and jQuery to manipulate HTML. </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"> Accomplishments:<i class="material-icons right">close</i></span>
+                                
+                                <div class="divider"></div>
+                                <ul>
+                                    <li> JavaScript / jQuery</li>
+                                    <li> HTML 5</li>
+                                    <li> CSS 3</li>
+                                    <li> Bootstrap</li>
+                                    <li> Firebase</li>
+                                </ul>
+                                <br>
+                                <div class="divider"></div>
+                                <div class="card-links">
+                                    <a href="https://helenhao888.github.io/TriviaGame/" alt="Trivia Game" target="_blank" data-position="top" data-toggle="tooltip" title="Live App" class="tooltipped"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/helenhao888/TriviaGame.git" target="_blank" data-position="top" data-toggle="tooltip" title="View Code on Github" class="tooltipped"><i class="fab fa-github-square"></i></a>
+                                </div> 
+                            </div><!--end of card-reveal-->
+                        </div>  <!--end of card-->
+                    </div>   <!--end of col-->
+                </div>    
+                    <div class=" col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/images/giftastic.png" alt="Giftastic">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Gif Tastic App<i class="material-icons right">more_vert</i></span>
+                                    <p>Use the GIPHY API to make a dynamic web page that populates with gifs.</p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4"> Accomplishments:<i class="material-icons right">close</i></span>
                                     
-                          </div> 
-                      </div>
-                      <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
-                              <div class="row">
-                                  <div class="content">
-                                      <a href= "https://helenhao888.github.io/unit-4-game/" alt="Star War"> 
-                                               <img src="assets/images/starwargame.png" class="img-fluid" alt="Star War Game"  ></a>
-                                                          
-                                  </div>
-                              </div>
-                              <div class="row">
-                                      
-                                  <div class="hthree"> 
-                                      <a href= "https://github.com/helenhao888/unit-4-game.git" alt="Star War Game Code">
-                                      <h3>Source Code </h3></a>
-                                  </div>
-                                        
-                              </div>
-                          </div>
-                      </div>    <!--end of row-->
-                      <div class="row">
-                          <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
-                              <div class="row">                <!--subrow-->
-                                  <div class="content">
-                                          <a href= "https://helenhao888.github.io/TriviaGame/" alt="Trivia Game"> 
-                                              <img src="assets/images/triviagame.jpg" class="img-fluid" alt="Trivia Game"  ></a>  
-                                                
-                                  </div>
-                              </div>
-                              <div class="row">             <!--subrow-->
-                                      
-                                  <div class="hthree"> 
-                                      <a href="https://github.com/helenhao888/TriviaGame.git">
-                                      <h3>Source Code</h3></a>
-                                  </div>
-                                        
-                              </div>
-                          </div>
-                          <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
-                                  <div class="row">
-                                      <div class="content">
-                                         <a href= "https://helenhao888.github.io/GifTastic/" alt="Gif Tastic">    
-                                             <img src="assets/images/giftastic.png" class="img-fluid" alt="Gif Tastic"  ></a>                                                           
-                                      </div>
-                                  </div>
-                                  <div class="row">
-                                          
-                                      <div class="hthree"> 
-                                              <a href= "https://github.com/helenhao888/GifTastic.git">
-                                          <h3>Source Code</h3></a>
-                                      </div>
-                                            
-                                  </div>
-                              </div>
-                  </div>    <!--end of row-->       
- 
-                  <div class="row">                      
-                            
-                      <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
-                              <div class="row">
-                                  <div class="content">
-                                     <a href= "https://helenhao888.github.io/TrainScheduler/" alt="Train Scheduler">    
-                                         <img src="assets/images/trainscheduler.png" class="img-fluid" alt="Train Scheduler"  ></a> 
-                                  </div>
-                              </div>
-                              <div class="row">
-                                      
-                                  <div class="hthree"> 
-                                          <a href= "https://github.com/helenhao888/TrainScheduler.git">
-                                      <h3>Source Code</h3></a>
-                                  </div>
-                                        
-                              </div>
-                      </div>
-                      <div class=" col-11 col-sm-9 col-md-6 col-lg-5">
-                          <div class="row">
-                              <div class="content">
-                                 <a href= "https://petewanca.github.io/team-helen-project-1/" alt="Love Your Car">    
-                                     <img src="assets/images/loveyourcar.jpg" class="img-fluid" alt="Love Your Car"  ></a>                                                           
-                              </div>
-                          </div>
-                          <div class="row">
-                                  
-                              <div class="hthree"> 
-                                      <a href= "https://github.com/petewanca/team-helen-project-1.git">
-                                  <h3>Source Code</h3></a>
-                              </div>
+                                    <div class="divider"></div>
+                                    <ul>
+                                        <li> JavaScript</li>
+                                        <li> HTML 5</li>
+                                        <li> CSS 3</li>
+                                        <li> Bootstrap</li>
+                                        <li> AJAX</li>
+                                    </ul>
+                                    <br>
+                                    <div class="divider"></div>
+                                    <div class="card-links">
+                                        <a href="https://helenhao888.github.io/GifTastic/" alt="GifTastic" target="_blank" data-position="top" data-toggle="tooltip" title="Live App" class="tooltipped"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="https://github.com/helenhao888/GifTastic.git" target="_blank" data-position="top" data-toggle="tooltip" title="View Code on Github" class="tooltipped"><i class="fab fa-github-square"></i></a>
+                                    </div> 
+                                </div><!--end of card-reveal-->
+                            </div>  <!--end of card-->
+                        </div>   <!--end of col-->      
+                     
+                        <div class=" col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/images/wordguessgame.png" alt="Word Guess Game">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Word Guess Game<i class="material-icons right">more_vert</i></span>
+                                    <p>Web-based game app to guess the word with correct spelling.</p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4"> Accomplishments:<i class="material-icons right">close</i></span>
                                     
-                          </div>
-                      </div>
-              </div>    <!--end of row-->  
-              <!-- </div> -->
-
+                                    <div class="divider"></div>
+                                    <ul>
+                                        <li> JavaScript</li>
+                                        <li> HTML 5</li>
+                                        <li> CSS 3</li>
+                                        <li> Bootstrap</li>
+                                    </ul>
+                                    <br>
+                                    <div class="divider"></div>
+                                    <div class="card-links">
+                                        <a href="https://helenhao888.github.io/Word-Guess-Game/" alt="Word Guess " target="_blank" data-position="top" data-toggle="tooltip" title="Live App" class="tooltipped"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="https://github.com/helenhao888/Word-Guess-Game.git" target="_blank" data-position="top" data-toggle="tooltip" title="View Code on Github" class="tooltipped"><i class="fab fa-github-square"></i></a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>  
             </div> 
         </section>
 
@@ -266,23 +350,6 @@
                     <a href="https://github.com/helenhao888" target="_blank" data-position="top" data-toggle="tooltip" title="View Helen on Github" class="tooltipped"><i class="fab fa-github-square"></i></a>
                     <a aria-label="Email Helen" href="mailto:haojinzhao888@gmail.com" data-position="top" data-toggle="tooltip" title="Email Helen Hao" class="tooltipped"><i class="fas fa-envelope-square"></i></a>
                 </div>
-
-                
-                    <form class="contact-form">
-                        <div class="form-group col-11 col-sm-10 col-md-8 col-lg-7 offset-md-1 justify-content-start">
-                            <label for="inputName">Name</label>
-                            <input type="password" class="form-control" id="inputName" placeholder="Name">
-                        </div>
-                        <div class="form-group col-11 col-sm-10 col-md-8 col-lg-7 offset-md-1 justify-content-start">
-                            <label for="inputEmail">Email</label>
-                            <input type="email" class="form-control" id="inputEmail"  placeholder="Enter email">                                
-                        </div>
-                        <div class="form-group col-11 col-sm-10 col-md-8 col-lg-7 offset-md-1 justify-content-start">
-                            <label for="inputMsg">Message</label>
-                            <input type="message" class="form-control messageBox" id="inputMsg" placeholder="">
-                        </div>                   
-                        <button type="submit" class="btn btn-primary offset-md-1 justify-content-start submitBt">Submit</button>                 
-                  </form>   
             </div>
         </section>
 
