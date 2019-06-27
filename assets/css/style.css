@@ -31,9 +31,9 @@ a:active{
     background-color:#ffffff;
     top: 15px;
     overflow: auto;
-    margin:50px;
+    margin:30px;
     font-family:"Arial', 'Helvetica Neue', Helvetica, sans-serif";
-    max-width:90%;
+    max-width:95%;
      }
 
 .introduction{
@@ -217,9 +217,7 @@ span{
     background-color:lightgoldenrodyellow;
     text-align:center;
     font-size:32px;
-    width:20%;
     padding:10px;
-    float: center;
 }
 
 .contact-title{
@@ -235,6 +233,10 @@ span{
     color:blue;
 }
 
+.contact-lists i{
+    margin-right:15px;
+    margin-left:15px;
+}
 
    
 .row, 

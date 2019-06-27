@@ -11,4 +11,4 @@
 * In contact section, there are links for github, email and Linkedin.
 
 
-*Photo by Paweł Czerwiński on Unsplash
+* Photo by Paweł Czerwiński on Unsplash
