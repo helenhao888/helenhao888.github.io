@@ -2,7 +2,11 @@
 
  $(document).ready(function(){
 
-  $(".sidenav").sidenav();
-  $(".contact-form").hide();
+// initialize materialized sidenav. after click, close the sidenav. 
+
+  $('.sidenav').sidenav()
+    .on('click tap', 'li a', () => {
+        $('.sidenav').sidenav('close');
+  });
 
  })

@@ -62,13 +62,14 @@
             </div>
 
             <div class="divider"></div>
-            <li><i class="fa fa-user sidenav-list" aria-hidden="true"><a href="#about">    About</a></i></li>
+            <li><i class="fa fa-user sidenav-list" aria-hidden="true"><a href="#about" class="waves-effect active">    About</a></i></li>
             <li><i class="fa fa-bar-chart" aria-hidden="true"><a href="#skills">   Skills</a></i></li>
             <li><i class="fa fa-briefcase" aria-hidden="true"><a href="#portfolio">   Portfolio</a></i></li>
             <li><i class="fa fa-file-text" aria-hidden="true"><a href="https://docs.google.com/document/d/1DJnspaG7GqwZVADFLNdtljNXkPXzCS7zqlB-Al_I3yQ/edit" target="_blank">   Resume</a></i></li>    
             <li><i class="fa fa-envelope" aria-hidden="true"><a href="#contact">   Contact</a></i></li>              
         </ul>
-        
+    
+    <main>
         <section id="about" class="section"> 
             <div class="container-fluid bg-light sectionbody" >
                 <div class="row container-fluid  subtitle">ABOUT</div>
@@ -87,7 +88,7 @@
                         <br>
                         <p class=aboutme>Highly self-driven professional with  experience in financial domain with a technical design/programming background. </p>
                         <br>
-                        <p class="aboutme">Hands-on experience in Web design/development and front-end programming using javascript, jQuery, HTML, CSS,  Bootstrap, firebase, AJAX and Node.js. </p>
+                        <p class="aboutme">Hands-on experience in Web design/development, front-end and back-end programming using javascript, jQuery, HTML, CSS,  Bootstrap, firebase, AJAX and Node.js. </p>
                         <br>
                         <p class=aboutme>Large project implementation, migration and support experience. Expertise in Mainframe skill sets with experience in SDLC, waterfall and Agile methodologies. 
                         </p>
@@ -101,48 +102,76 @@
             <div class="container-fluid bg-light sectionbody" > 
                 <div class="row  subtitle">SKILLS</div>
                 <hr>
-                <table class="table table-bordered table-hover ">
-                    <thead class="thead-dark">                
-                        <tr>
-                            <th scope="col">Full Stack Developer</th>
-                            <th scope="col">Mainframe Developer</th>
-                            <th scope="col">Project Skills</th>                           
-                        </tr>              
-                    </thead>
-                    <tbody class="skill-list">        
-                         <tr>
-                            <td>
-                              <li><i class="fab fa-html5"> Html 5</i></li>
-                              <li><i class="fab fa-css3" aria-hidden="true"> CSS 3</i> </li>
-                              <li><i class="fab fa-js"> Javascript</i></li>
-                              <li><i class="fab fa-js"></i> jQuery</li>
-                              <li><i class="fab fa-bootstrap"> Bootstrap</i></li>
-                              <li><i class="fab fa-node"> Node.js</i></li>
-                              <li><i class="fas fa-database"> Firebase</i></li>
-                              <!-- <li><image src="assets/images/firebase.jpg">Firebase</image></li> -->
-                              <li><i class="fab fa-github" aria-hidden="true"> Github</i></li>
-                              <li><i class="fab fa-slack" aria-hidden="true"> Slack</i></li>
-                            </td>
-                            
-                            <td>
-                              <li>Cobol</li>
-                              <li>Db2</li>
-                              <li>CICS</li>
-                              <li>JCL</li>
-                              <li>Mainframe</li>
-                            </td>
+                
+                <div class="card card-skill">
+                    <div class="card-content card-skill-front">
+                        <h4>Front-End </h4>
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-sm-4 col-md-3 col-lg-2">
+                                <i class="fab fa-html5 skill">HTML5</i> 
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-lg-2">
+                                <i class="fab fa-css3 skill" aria-hidden="true">CSS3</i>
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-lg-2">
+                                <i class="fab fa-js skill">Javascript</i>
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-lg-2">
+                                <i class="fab fa-js skill">jQuery</i>
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-lg-2">
+                            <i class="fab fa-bootstrap skill">Bootstrap</i>
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-lg-2">
+                                <i class="fab fa-js skill">Material</i>
+                            </div>
+                            <div class="col-sm-4 col-md-3 col-lg-2">
+                                <i class="fab fa-js skill">AJAX</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <td>
-                              <li>SDLC</li>
-                              <li>Waterfall</li>
-                              <li>Agile</li>
-                              <li>PMP</li>
-                            </td>
-                         </tr>      
-                        
-                    </tbody>
-                 </table>
-               
+                <div class="card card-skill">
+                        <div class="card-content card-skill-back">
+                            <h4>Back-End </h4>
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col-sm-4 col-md-3 col-lg-2">
+                                    <i class="fab fa-node skill"> Node.js</i>
+                                </div>
+                                <div class="col-sm-4 col-md-3 col-lg-2">
+                                    <i class="fab fa-npm skill" aria-hidden="true"> NPM</i>
+                                </div>
+                                <div class="col-sm-4 col-md-3 col-lg-2">
+                                    <i class="fas fa-database skill"> Firebase</i>
+                                </div>
+                                <div class="col-sm-4 col-md-3 col-lg-2">
+                                    <i class="fas fa-database skill" aria-hidden="true"> SQL</i>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-skill">
+                        <div class="card-content card-skill-other">
+                            <h4>Other</h4>
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col-sm-4 col-md-3 col-lg-2">
+                                        <i class="fab fa-github skill" aria-hidden="true"> Github/Git</i>
+                                </div>
+                                <div class="col-sm-4 col-md-3 col-lg-2">
+                                    <i class="fab fa-css3 skill" aria-hidden="true"> VS Code</i>
+                                </div>
+                                <div class="col-sm-4 col-md-3 col-lg-2">
+                                    <i class="fab fa-slack skill" aria-hidden="true"> Slack</i>
+                                </div>
+                                
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>      
        
@@ -153,11 +182,11 @@
                 <div class="row">
                         
                     <div class=" col-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="card">
+                        <div class="card card-port">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="assets/images/loveyourcar.jpg" alt="Love Your Car">
                             </div>
-                            <div class="card-content">
+                            <div class="card-content card-portfolio">
                                 <span class="card-title activator grey-text text-darken-4">Love Your Car App<i class="material-icons right">more_vert</i></span>
                                 <p>Car Sales and Inquiry App with user authentication and favorite features.</p>
                             </div>
@@ -184,11 +213,11 @@
                         </div>
                     </div>  
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="card">
+                        <div class="card card-port">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="assets/images/starwargame.png" alt="Star War Game">
                             </div>
-                            <div class="card-content">
+                            <div class="card-content card-portfolio">
                                 <span class="card-title activator grey-text text-darken-4">Star War Game<i class="material-icons right">more_vert</i></span>
                                 <p>Web-based game app using jQuery to manipulate HTML dynamically.</p>
                             </div>
@@ -214,11 +243,11 @@
                     
                 <div class="row">   
                     <div class=" col-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="card">
+                        <div class="card card-port">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="assets/images/trainscheduler.png" alt="Train Scheduler App">
                             </div>
-                            <div class="card-content">
+                            <div class="card-content card-portfolio">
                                 <span class="card-title activator grey-text text-darken-4">Train Schedule App<i class="material-icons right">more_vert</i></span>
                                 <p>Train schedule application that incorporates Firebase to add,update and delete train data.</p>
                             </div>
@@ -246,11 +275,11 @@
                     
                 
                     <div class=" col-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="card">
+                        <div class="card card-port ">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="assets/images/triviagame.jpg" alt="Trivia Game">
                             </div>
-                            <div class="card-content">
+                            <div class="card-content card-portfolio">
                                 <span class="card-title activator grey-text text-darken-4">Trivia Game<i class="material-icons right">more_vert</i></span>
                                 <p>Web-based game app using JavaScript for the logic and jQuery to manipulate HTML. </p>
                             </div>
@@ -276,11 +305,11 @@
                     </div>   <!--end of col-->
                 </div>    
                     <div class=" col-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="card">
+                            <div class="card card-port">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="assets/images/giftastic.png" alt="Giftastic">
                                 </div>
-                                <div class="card-content">
+                                <div class="card-content card-portfolio">
                                     <span class="card-title activator grey-text text-darken-4">Gif Tastic App<i class="material-icons right">more_vert</i></span>
                                     <p>Use the GIPHY API to make a dynamic web page that populates with gifs.</p>
                                 </div>
@@ -306,11 +335,11 @@
                         </div>   <!--end of col-->      
                      
                         <div class=" col-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="card">
+                            <div class="card card-port">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="assets/images/wordguessgame.png" alt="Word Guess Game">
                                 </div>
-                                <div class="card-content">
+                                <div class="card-content card-portfolio">
                                     <span class="card-title activator grey-text text-darken-4">Word Guess Game<i class="material-icons right">more_vert</i></span>
                                     <p>Web-based fun game to guess the word with correct spelling with pictures and sounds.</p>
                                 </div>
@@ -355,12 +384,13 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <footer class="footer">
-        <div class="copyright">
-            <p> &#169  2019 Copyright</p>
-        </div>
-        </footer>
+    <footer class="footer">
+    <div class="copyright">
+        <p> &#169  2019 Copyright</p>
+    </div>
+    </footer>
 
     </body>    
     

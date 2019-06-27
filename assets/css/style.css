@@ -46,6 +46,22 @@ a:active{
     font-size:24px;
 }
 
+.card-skill-front{
+    background: url("../images/skillbk1.jpg");
+}
+.card-skill-back{
+    background: url("../images/skillbk2.jpg");
+}
+.card-skill-other{
+    background: url("../images/skillbk3.jpg");
+}
+
+.skill{
+    font-size:30px;
+    color:blue;
+    margin:3px;
+}
+
 table li{
     padding:5px;
     font-size:20px;
@@ -169,10 +185,10 @@ span{
     margin:10px;
 }
 
-.card{
+.card-port{
     width:90%;
 }
-.card-content{
+#card-portfolio{
     background:url("../images/portfoliobk.jpg") ;
 }
 
