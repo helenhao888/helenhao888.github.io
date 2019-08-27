@@ -3,7 +3,7 @@
 ### About Me
 * Highly self-driven professional with 8 years of experience in financial domain with a technical design/programming background. 
 * Vanderbilt University certified Full Stack developer.
-* Hands-on development, testing and debugging skills in HTML5, CSS, JavaScript, jQuery, AJAX, Node.js, Express.js, Handlebars, MySQL and MongoDB. Master user authentication process. 
+* Hands-on development, testing and debugging skills in HTML5, CSS, JavaScript, jQuery, AJAX, Node.js, Express.js, Handlebars, React,MySQL and MongoDB. Master user authentication process. 
 * Experience in SDLC, waterfall and Agile methodologies. 
 * Self-motivated with excellent communication, presentation and analytical problem-solving skills. Zeal to learn new technologies.
 
@@ -22,14 +22,14 @@ https://helenhao888.github.io/
 https://github.com/helenhao888/helenhao888.github.io.git
 
 ### Developer
-    Developed by Helen Hao (helenhao888)
+* Developed by Helen Hao (helenhao888)
     
 ### Technologies
-     HTML5
-     CSS
-     Bootstrap
-     Materialized CSS 
-     Javascript
+* HTML5
+* CSS
+* Bootstrap
+* Materialized CSS 
+* Javascript
 
 ### License
 * MIT
@@ -38,6 +38,6 @@ https://github.com/helenhao888/helenhao888.github.io.git
 ### Contact Information
 
    Helen Hao :
-   :link:[linkedIn](https://www.linkedin.com/in/jinzhao-helen-hao-611b3752/) 
-   :link:[Portfolio](https://helenhao888.github.io)  
-   :link:[Resume] (https://docs.google.com/document/d/1YsqRBC9wGRot8Qp1rQYaWtPdRWxUQS9U9aTpQG6gvf8/edit?usp=sharing)  
+* :link:[linkedIn](https://www.linkedin.com/in/jinzhao-helen-hao-611b3752/) 
+* :link:[Portfolio](https://helenhao888.github.io)  
+* :link:[Resume](https://docs.google.com/document/d/1YsqRBC9wGRot8Qp1rQYaWtPdRWxUQS9U9aTpQG6gvf8/edit?usp=sharing)  
